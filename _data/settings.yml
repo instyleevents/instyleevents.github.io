@@ -1,0 +1,28 @@
+# General Site Settings
+# =============================
+
+# READ ME: Before you change the tagline in the welcome page, some notes to remember:
+#          <br> - breaks the line into two lines.
+#          e.g  - Makes every moment Memorable... (when added <br> it turns into)
+#                         -
+#                 Makes every moment
+#                     Memorable...
+#          <span> - changes the text color to #FF0030 or Red.
+#
+# Remember: Avoid having too long taglines! It's best to keep it under 8 words to not break the layout.
+
+tagline: Makes every moment <span>Memorable</span>...
+
+# =============================
+# Navigation
+
+# READ ME: To add more links, simply add a new line by copy pasting! Only change what is in between quotes!
+#          if in some cases you wanted to change links (url), do it at your own risk!
+
+nav:
+- {name: 'Welcome', url: '#welcome'}
+- {name: 'About', url: '#about'}
+- {name: 'Gallery', url: '#'}
+- {name: 'Team', url: '#'}
+- {name: 'Packages', url: '#'}
+- {name: 'Contacts', url: '#'}
