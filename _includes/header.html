@@ -1,41 +1,43 @@
-<header id="welcome">
+<header>
 
-  <video autoplay loop poster="/assets/img/videobgposter.jpg" id="bgvid">
-    <source src="/assets/img/videobg.mp4">
-    <source src="/assets/img/videobg.webm">
-  </video>
-
-  <div class="sticky-nav">
-    <div class="sticky-nav-lockup">
-      <a href="#welcome"><div class="logo">{% include icons/logo.html %}</div></a>
-      <nav>
-      {% for items in site.data.settings.nav %}
-        <a class="hvr-underline-from-center" href="{{items.url}}">{{items.name}}</a>
-      {% endfor %}
-      </nav>
-    </div>
-  </div>
-
-  <div class="header-lockup">
+  <nav class="menu">
 
     <div class="row">
-      <a href="#welcome"><div class="logo">{% include icons/logo.html %}</div></a>
+      <div class="logo">{% include icons/logo.html %}</div>
 
-      <nav>
+      <a class="toggle-nav" href="#">&#9776;</a>
+
+      <ul class="active">
+
         {% for items in site.data.settings.nav %}
-          <a class="hvr-underline-from-center" href="{{items.url}}">{{items.name}}</a>
+          <li><a class="hvr-underline-from-center" href="{{items.url}}">{{items.name}}</a></li>
         {% endfor %}
-      </nav>
+
+      </ul>
+
 
     </div>
 
-    <h1>{{site.data.settings.tagline}}</h1>
+  </nav>
 
-    <div class="row2">
-      <a class="our-gallery-button" href=""><i class="fa fa-rocket fa-lg"></i>Our Gallery</a>
-      <a class="what-we-do-button hvr-icon-forward" href="">What we do</a>
+  <div id="welcome" class="slick">
+
+    <div class="slide" style="background: url(/assets/img/4.jpg); background-size: cover; background-position: center center;">
+
+      <div class="slide-content-lockup">
+        <h1>Welcome to Instyle Events!</h1>
+      </div>
+
+
+    </div>
+
+    <div class="slide" style="background: url(/assets/img/2.jpg); background-size: cover; background-position: center center;">
+
+      <div class="slide-content-lockup">
+        <h1>Where blablabla</h1>
+      </div>
+
     </div>
 
   </div>
-
 </header>

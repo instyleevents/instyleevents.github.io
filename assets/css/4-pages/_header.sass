@@ -1,149 +1,128 @@
+.sticky
+  position: fixed!important
+  top: 0px!important
+  background: rgba(0,0,0,.5)!important
+  z-index: 1000!important
+
 header
-  position: relative
-  min-height: 643px
-  width: 100%
-  height: 100vh
-  overflow: hidden
+  .menu
+    z-index: 1
+    .toggle-nav
+      display: none
 
-  video
-    position: fixed
-    min-height: 100%
-    min-width: 100%
-    height: auto
-    width: auto
-    z-index: -100
+  .slick
+    position: relative
 
-  .nav-invisible
-    display: none
+    .slide
+      width: 100%
+      height: 100vh
+      outline: none
 
-  .sticky-nav
-    z-index: 1000
-    background: black
-    position: fixed
-    width: 100%
-
-    .sticky-nav-lockup
-      margin: 0 auto
+    .slide-content-lockup
+      width: 100%
+      height: 100%
+      background: rgba(50,50,50,.7)
       padding: 20px
-      max-width: 1090px
 
-      .logo
-        float: left
+      +display(flex)
+      +justify-content(center)
+      +align-items(center)
 
-      nav
-        float: right
+      h1
+        color: white
+        text-transform: capitalize
+        font-weight: 600
 
-        a
-          text-transform: uppercase
-          color: white
-          margin-right: 40px
-          padding-bottom: 5px
-
-  .header-lockup
+@media (min-width: 910px)
+  .menu
+    position: absolute
+    top: 0px
     width: 100%
-    height: 100%
-    background: rgba(23,23,23,.8)
+    background: transparent
+    +clearfix
 
     .row
-      max-width: 1100px
-      margin: 0px auto
-      padding: 90px 40px 0
+      padding: 20px 30px 0
 
       .logo
-        +size(155px 30px)
         float: left
 
-      nav
+      ul
+        display: inline-block
         float: right
 
-        a
-          text-transform: uppercase
-          color: white
-          margin-right: 40px
-          padding-bottom: 10px
-          letter-spacing: 1px
-          vertical-align: bottom
+        li
+          float: left
+          margin: 0px 40px 0px 0px
+          list-style: none
+          font-size: 16px
 
-    h1
-      text-align: center
-      letter-spacing: 2px
-      margin-top: 200px
-      font-family: 'Leckerli One'
-      font-weight: 400
-      font-size: 48px
-      padding: 0 20px
-      color: white
+          a
+            padding-bottom: 5px
+            color: white
+            text-transform: capitalize
 
-      span
-        color: $instylered-color
-
-    .row2
-      margin-top: 100px
-      padding: 0 20px
-      text-align: center
-
-      .our-gallery-button
-        font-size: 22px
-        background: $instylered-color
-        color: black
-        padding: 20px 15px 20px 20px
-        margin-bottom: 15px
-        border-radius: 5px
-        vertical-align: middle
-        box-sizing: border-box
-        +transition
-
-        i
-          margin-right: 20px
-          vertical-align: middle
-
-        &:hover
-          color: white
-          background: black
-
-      .what-we-do-button
-        font-size: 18px
-        padding-top: 25px
-        color: white
-        margin-left: 20px
+        li:last-child(1)
+          margin: 0
 
 @media (max-width: 910px)
-
-  .sticky-nav
-
-    .sticky-nav-lockup
-
-      .logo
-        float: none!important
-        +display(flex)
-        +justify-content(center)
-        +align-items(center)
-
-      nav
-        display: none!important
-
-  .header-lockup
-    h1
-      margin-top: 50px!important
+  .menu
+    width: 100%
+    position: absolute
+    top: 0px
+    display: inline-block
+    background: transparent
 
     .row
-      padding: 20px!important
+
+      ul
+        position: absolute
+        top: 0px
+        right: 0px
+        width: 100px
+        height: 100vh
+        z-index: -1
+        background: black
+        margin: 0
+
+        li
+          display: block
+
+          a
+            padding: 10px 0px
+            text-align: left
+            color: white
+
+        li:first-child
+          padding-top: 100px
+
+      .active
+        display: none
+
       .logo
-        float: none!important
-        margin: 0 auto!important
+        float: left
+        padding: 20px 0 0 20px
 
-      nav
-        margin-top: 10px
-        text-align: center
-        float: none!important
-        +display(flex!important)
-        +justify-content(space-around!important)
-        +align-items(center!important)
-        +flex-wrap(wrap)
+      .toggle-nav
+        display: inline-block
+        float: right
+        z-index: 5
+        margin: 20px 20px 0 0
+        padding: 20px
+        font-size: 1.5em
+        background: black
+        color: white
+        +transition
 
-        a
-          padding: 20px
-          margin-right: 0!important
+        &:hover
+          background: $instylered-color
 
-    .row2
-      margin-top: 50px!important
+@media (max-width: 350px)
+  .menu
+    .logo
+      max-width: 150px!important
+      max-height: 40px!important
+
+      svg
+        max-width: 150px!important
+        max-height: 40px!important

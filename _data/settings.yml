@@ -1,8 +1,9 @@
 # General Site Settings
 # =============================
+# Tagline
 
 # READ ME: Before you change the tagline in the welcome page, some notes to remember:
-#          <br> - breaks the line into two lines.
+#          <br> - breaks a line into two lines.
 #          e.g  - Makes every moment Memorable... (when added <br> it turns into)
 #                         -
 #                 Makes every moment
@@ -26,3 +27,20 @@ nav:
 - {name: 'Team', url: '#'}
 - {name: 'Packages', url: '#'}
 - {name: 'Contacts', url: '#'}
+
+# =============================
+# About
+
+about-title: 'Welcome to In Style Events'
+
+# READ ME: <br> - breaks a line into two lines.
+
+about-description: "From intimate executive forums to large scale events like corporate events, weddings, debuts and everything in between,
+In Style Events can help you to successfully achieve your objectives within the perimeters of your budget.<br/>
+<br/>
+Wedding is the most special and memorable day in one's life. That's why In Style Events Team  will give every single
+effort to make that moment extra ordinary and make your dream wedding a reality.<br/>
+<br/>
+We understand that every couple has unique taste and desire. Therefore, we offer services according to the clients
+need. Its ideal for all the client who needs assistance from planning, initiation, down to the preparation and utmost
+end of the event."
