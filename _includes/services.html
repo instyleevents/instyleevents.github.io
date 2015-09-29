@@ -1,7 +1,16 @@
 <section id="services" class="services-page">
 
-  <h2 class="title">Our Services</h2>
+  <h2 class="title">{{site.data.settings.services-title}}</h2>
 
-  <p class="subtitle">From event planners & coordinators to hosts. <br/> We make sure to deliver customer satisfaction through our services.</p>
+  <p class="subtitle">{{site.data.settings.services-subtitle}}</p>
+
+  <div class="services-icons-lockup">
+    {% for items in site.data.settings.services %}
+    <div class="icon-unit">
+      <span class="icon">i</span>
+      <p class="icon-title">{{items.name}}</p>
+    </div>
+    {% endfor %}
+  </div>
 
 </section>

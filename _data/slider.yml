@@ -1,0 +1,45 @@
+# =============================
+# Slider Settings
+
+# READ ME: This is where you can add more slides or change slider content!
+#          Please remember to do not add lengthy content inside the slider or it will
+#          ruin the format.
+
+# How to add slides: Simply copy paste existing line into new one, for example:
+
+# slides:
+# - {title: "Title",
+#   subtitle: "subtitle",
+#   background: "slide-2.jpg"}
+#
+# // To add new slide just copy paste into a new line.
+#
+# - {title: "Slide 3",
+#   subtitle: "Slide 3 subtitle"
+#   background: "slide-2.jpg"}
+
+# IMPORTANT: The slider is currently set to a maximum number of "5" slides (including the first slide)! If you wish
+#            to remove the limit, please contact the developer.
+#
+# IMPORTANT: For advanced layouts, you need to atleast know basic HTML & CSS.
+#            please contact the developer.
+
+# IMPORTANT: Backgrounds must be inside the 'assets/img' folder! If not, you will not see the background.
+#            It is also advisable to have the background in 1080 x 720 size so that it will not take too much
+#            time to load! Also, remember to include the file-type! (.jpg or .png)
+#
+# You may change the first slide's content in the 'settings.yml' file.
+
+slides:
+- {title: "Title",
+  subtitle: "subtitle",
+  background: "slide-2.jpg"}
+- {title: "Title",
+  subtitle: "subtitle",
+  background: "slide-3.jpg"}
+- {title: "Title",
+  subtitle: "subtitle",
+  background: "slide-4.jpg"}
+- {title: "Title",
+  subtitle: "subtitle",
+  background: "slide-5.jpg"}

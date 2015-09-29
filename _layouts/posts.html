@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<header>
+
+  <div class="logo">{% include icons/logo.html %}</div>
+
+  <nav class="menu">
+
+      <div class="logo">{% include icons/logo.html %}</div>
+
+      <a class="toggle-nav" href="#">&#9776;</a>
+
+      <ul class="active">
+
+        {% for items in site.data.settings.nav %}
+          <li><a class="hvr-underline-from-center" href="{{items.url}}">{{items.name}}</a></li>
+        {% endfor %}
+
+      </ul>
+
+
+  </nav>
+
+</header>
+
+<div class="background-header">test</div>

@@ -1,6 +1,6 @@
 .services-page
   background: #e8e8e8
-  padding: 50px 40px
+  padding: 100px 40px
 
   .title, .subtitle
     margin: 0
@@ -15,7 +15,40 @@
     letter-spacing: 2px
 
   .subtitle
+    margin-top: 20px
     color: black
     text-align: center
     font-weight: 300
     font-style: italic
+
+  .services-icons-lockup
+    max-width: 800px
+    margin: 30px auto 0
+    +display(flex)
+    +flex-wrap(wrap)
+    +align-items(baseline)
+    +justify-content(center)
+
+    .icon-unit
+      margin-top: 20px
+      +display(flex)
+      +flex-direction(column)
+      +justify-content(center)
+      +align-items(center)
+      +size(200px)
+
+      .icon
+        +display(flex)
+        +justify-content(center)
+        +align-items(center)
+        +size(150px)
+        border: 2px solid #b6b6b6
+        border-radius: 50%
+
+      .icon-title
+        margin-top: 20px
+        width: 180px
+        text-align: center
+        text-transform: uppercase
+        font-weight: 700
+        font-size: 12px

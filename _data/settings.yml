@@ -1,6 +1,13 @@
-# General Site Settings
 # =============================
-# Tagline
+# Landing Page Settings (main-text)
+
+# READ ME: This is the main text of the landing page.
+# IMPORTANT: You can add more slides to the landing page by opening slider.yml file.
+
+slider-text: "Welcome to <strong>Instyle Events!</strong>"
+
+# =============================
+# Landing Page Settings (tagline)
 
 # READ ME: Before you change the tagline in the welcome page, some notes to remember:
 #          <br> - breaks a line into two lines.
@@ -12,7 +19,15 @@
 #
 # Remember: Avoid having too long taglines! It's best to keep it under 8 words to not break the layout.
 
-tagline: Makes every moment <span>Memorable</span>...
+slider-tagline: "Makes every moment <span>Memorable</span>..."
+
+# =============================
+# Landing Page Settings (background)
+
+# READ ME: Here you can change the first slide's background. I recommend to use a 1080x780 size for backgrounds,
+#          so it will not take too much time to load!
+
+slider-background: "slide-1.jpg"
 
 # =============================
 # Navigation
@@ -21,17 +36,18 @@ tagline: Makes every moment <span>Memorable</span>...
 #          if in some cases you wanted to change links (url), do it at your own risk!
 
 nav:
-- {name: 'Welcome', url: '#welcome'}
-- {name: 'About', url: '#about'}
-- {name: 'Gallery', url: '#'}
-- {name: 'Team', url: '#'}
-- {name: 'Packages', url: '#'}
-- {name: 'Contacts', url: '#'}
+- {name: "Welcome", url: '#welcome'}
+- {name: "About", url: '#about'}
+- {name: "Services", url: '#services'}
+- {name: "Gallery", url: '#'}
+- {name: "Team", url: '#'}
+- {name: "Packages", url: '#'}
+- {name: "Contacts", url: '#'}
 
 # =============================
 # About
 
-about-title: 'Welcome to In Style Events'
+about-title: "Welcome to In Style Events"
 
 # READ ME: <br> - breaks a line into two lines.
 
@@ -44,3 +60,18 @@ effort to make that moment extra ordinary and make your dream wedding a reality.
 We understand that every couple has unique taste and desire. Therefore, we offer services according to the clients
 need. Its ideal for all the client who needs assistance from planning, initiation, down to the preparation and utmost
 end of the event."
+
+# =============================
+# Services
+
+services-title: "Our Services"
+services-subtitle: "From event planners & coordinators to hosts. <br/> We make sure to deliver customer satisfaction through our services."
+
+services:
+- {name: "Event Planners & Coordinators", icon: ""}
+- {name: "Photo & Video Services", icon: ""}
+- {name: "Lights & Sound System", icon: ""}
+- {name: "Personalized Wedding Cords & Candles", icon: ""}
+- {name: "Florist & Event Stylist", icon: ""}
+- {name: "Bridal Car & Van Rentals", icon: ""}
+- {name: "Host", icon: ""}

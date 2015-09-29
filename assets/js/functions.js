@@ -1,9 +1,10 @@
 $( document ).ready(function() {
   $('.slick').slick({
     autoplay: true,
-    arrows: false,
+    dots: true,
+    autoplaySpeed: 4000,
     pauseOnHover: false,
-    speed: 1000
+    speed: 1500
   });
 
   menuToggle();
