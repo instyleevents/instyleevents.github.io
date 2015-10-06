@@ -18,18 +18,37 @@ header
       top: 50%
       left: 0%
       z-index: 100
+      border-top-right-radius: 5px
+      border-bottom-right-radius: 5px
+
+      &:hover
+        background: $instylered-color
+        transform: translateX(-10px)
 
     .slick-next
       position: absolute
       top: 50%
       right: 0%
+      border-top-left-radius: 5px
+      border-bottom-left-radius: 5px
+
+      &:hover
+        background: $instylered-color
+        transform: translateX(10px)
 
     .slick-prev, .slick-next
+      +transition(all .6s)
       padding: 10px 30px
+      outline: none
+      color: black
+      letter-spacing: 1px
+      font-weight: 600
+      background: white
+      border: none
 
     .slick-dots
       position: absolute
-      margin-left: -95px
+      margin-left: -80px
       padding: 0
       bottom: 1%
       left: 50%
@@ -42,14 +61,14 @@ header
 
       li
         display: inline-block
-        margin-right: 10px
+        margin-right: 20px
 
         button
-          +size(30px)
+          +size(15px)
           outline: none
           vertical-align: center
           background: rgba(0,0,0,.5)
-          color: white
+          color: transparent
           font-weight: 800
           border: none
           border-radius: 50%
@@ -139,8 +158,9 @@ header
         background: white
         margin: 20px 0
 
-      h4
+      .tagline
         padding: 0 20px
+        font-size: 30px
 
       .date
         text-transform: capitalize
@@ -149,6 +169,14 @@ header
         font-weight: 400
         font-size: 22px
         color: white
+
+      .readmore-alt
+        margin-top: 3px
+        color: white
+        font-style: italic
+
+        &:hover
+          text-decoration: underline
 
       .readmore
         margin-top: 30px
@@ -180,19 +208,20 @@ header
 @media (min-width: 910px)
   .menu
     position: absolute
-    top: 0px
+    top: 40px
     width: 100%
     background: transparent
     +clearfix
 
     .row
-      padding: 20px 30px 0
+      padding: 5px 30px 0
 
       .logo
         float: left
 
       ul
         display: inline-block
+        -webkit-margin-after: .5em
         float: right
 
         li
@@ -209,7 +238,7 @@ header
         li:last-child(1)
           margin: 0
 
-@media (max-width: 910px)
+@media (max-width: 1050px)
 
   .slick
     .slick-prev, .slick-next

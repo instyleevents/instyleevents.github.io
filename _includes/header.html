@@ -22,14 +22,14 @@
 
   <div id="welcome" class="slick">
 
-    <div class="slide" style="background: url(/assets/img/{{site.data.settings.slider-background}}); background-size: cover; background-position: center center;">
+    <div class="slide" style="background: url(/assets/img/{{site.data.settings.slider-background}}) center center no-repeat; background-size: cover;">
 
       <div class="slide-content-lockup">
         <h2>{{site.data.settings.slider-text}}</h2>
         <h4 class="tagline">{{site.data.settings.slider-tagline}}</h4>
 
         <div class="row">
-          <a class="our-gallery-button" href="#"><i class="fa fa-rocket">i</i>Our Gallery</a>
+          <a class="our-gallery-button" href="#"><i class="fa fa-rocket"></i>Our Gallery</a>
           <a class="what-we-do-button hvr-icon-forward" href="#about">What we do</a>
         </div>
 
@@ -47,6 +47,7 @@
           <p class="post-content">{{post.content | strip_html | truncatewords: 40}}</p>
           <span class="divider"></span>
           <a class="readmore" href="{{post.url}}">Read Full Article</a>
+          <a class="readmore-alt" href="#">or visit our <strong>blog</strong></a>
         </div>
       </div>
     {% endfor %}

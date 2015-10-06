@@ -7,10 +7,14 @@
   <div class="services-icons-lockup">
     {% for items in site.data.settings.services %}
     <div class="icon-unit">
-      <span class="icon">i</span>
+      <span class="icon fa {{items.icon}} fa-4x"></span>
       <p class="icon-title">{{items.name}}</p>
     </div>
     {% endfor %}
+
+
   </div>
+
+  <a class="services-contact-us" href="#">Contact Us</a>
 
 </section>
