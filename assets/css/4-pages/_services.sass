@@ -56,34 +56,20 @@
       +justify-content(center)
       +align-items(center)
       +size(200px)
+      +transition(all .3s, ease-in-out)
+
+      &:hover
+        transform: scale(.9)
 
       .icon
         +display(flex)
         +justify-content(center)
         +align-items(center)
         +size(150px)
+        z-index: 1
         border: 2px solid #2e2d33
         border-radius: 50%
         position: relative
-        +transition(all .15s ease-out)
-
-        &:hover::after
-          transform: scale(1.5)
-          opacity: 0
-
-      .icon::after
-        content: ""
-        display: block
-        position: absolute
-        top: 0px
-        right: 0px
-        bottom: 0px
-        left: 0px
-        margin: -2px
-        border: 2px solid #2e2d33
-        border-radius: 50%
-        opacity: 1
-        +transition(all .15s ease-out)
 
       .icon-title
         margin-top: 20px

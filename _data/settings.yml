@@ -1,51 +1,40 @@
+# General Site Settings
 # =============================
-# Landing Page Settings (main-text)
-
-# READ ME: This is the main text of the landing page.
-# IMPORTANT: You can add more slides to the landing page by opening slider.yml file.
-
-slider-text: "Welcome to <strong>Instyle Events!</strong>"
-
-# =============================
-# Landing Page Settings (tagline)
-
-# READ ME: Before you change the tagline in the welcome page, some notes to remember:
-#          <br> - breaks a line into two lines.
-#          e.g  - Makes every moment Memorable... (when added <br> it turns into)
-#                         -
-#                 Makes every moment
-#                     Memorable...
-#          <span> - changes the text color to #FF0030 or Red.
+# This is where you can change any text in the website. From titles to description, from services and featured
+# gallery video.
 #
-# Remember: Avoid having too long taglines! It's best to keep it under 8 words to not break the layout.
-
-slider-tagline: "Makes every moment <span>Memorable</span>..."
-
-# =============================
-# Landing Page Settings (background)
-
-# READ ME: Here you can change the first slide's background. I recommend to use a 1080x780 size for backgrounds,
-#          so it will not take too much time to load!
-
-slider-background: "slide-1.jpg"
+# Parts of the website has pretty straightforward names but for more complex changes, you may need some knowledge
+# on basic CSS and HTML.
+#
+# To look for keywords press CTRL + F (Windows) / CMD + F (Mac) and type the text you want to find.
+# A table of contents has been laid out for your convenience.
+#
+# Table of Contents:
+# 1) Navigation
+# 2) About
+# 3) Services
+# 4) Gallery
 
 # =============================
 # Navigation
 
 # READ ME: To add more links, simply add a new line by copy pasting! Only change what is in between quotes!
 #          if in some cases you wanted to change links (url), do it at your own risk!
+#
 
 nav:
 - {name: "Welcome", url: '#welcome'}
 - {name: "About", url: '#about'}
 - {name: "Services", url: '#services'}
-- {name: "Gallery", url: '#'}
+- {name: "Gallery", url: '#gallery'}
 - {name: "Team", url: '#'}
 - {name: "Packages", url: '#'}
 - {name: "Contacts", url: '#'}
 
 # =============================
 # About
+#
+# To break into a new line. Input 1 <br/>, to break into a new paragraph. Input 2 <br/>
 
 about-title: "Welcome to In Style Events"
 
@@ -63,6 +52,10 @@ end of the event."
 
 # =============================
 # Services
+#
+# Some knowledge is needed in order to change the icons, do it at your own risk!
+#
+# Icons have been taken from www.fontawesome.com and is free for public use.
 
 services-title: "Our Services"
 services-subtitle: "From event planners & coordinators to hosts. <br/> We make sure to deliver customer satisfaction through our services."
@@ -75,3 +68,26 @@ services:
 - {name: "Florist & Event Stylist", icon: "fa-paint-brush"}
 - {name: "Bridal Car & Van Rentals", icon: "fa-car"}
 - {name: "Host", icon: "fa-user"}
+
+# =============================
+# Services
+#
+# To change the embedded featured video. You need to grab the video's ID in youtube.
+# Please note that the featured video works only for youtube. For wistia you may need to
+# edit the source code directly.
+#
+# You may find the source code at "_includes/gallery.html" line 13
+#
+# Example on how to change featured video (youtube)
+#
+#   https://www.youtube.com/watch?v=dQw4w9WgXcQ
+#   - the letters after v= is what you need. (dQw4w9WgXcQ)
+#
+#   Final result will be:
+#   gallery-featured-video: "dQw4w9WgXcQ"
+
+gallery-title: "Our Gallery"
+gallery-subtitle: "Our most recent gallery updates. These are just the tip of the iceberg...<br>
+  Make sure to check all our work by visiting our full gallery page."
+
+gallery-featured-video: "3xAK8dzffn8"

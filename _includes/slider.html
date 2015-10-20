@@ -1,0 +1,17 @@
+<section class="slider">
+  {% for posts in .site.posts limit: 4 %}
+  <div class="slide-container" style="background: url(/assets/img/blog/{{posts.background}}) no-repeat;">
+    <div class="slide-lockup">
+      <div class="slide-content">
+        <h1 class="slide-title">{{posts.title}}</h1>
+        <strong class="date">{{posts.date | date: "%B %d, %Y"}}</strong>
+        <p class="content">{{posts.content | strip_html | truncatewords: 37}}</p>
+          <hr class="divider"></hr>
+          <a href="{{posts.url}}" class="read-full-article-button">Read Full Article</a><br>
+          <a href="#" class="blog-button">or visit our <span>blog</span></a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+
+</section>
