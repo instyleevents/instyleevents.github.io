@@ -1,0 +1,198 @@
+.team-section
+  padding: 100px 0
+  background: url(../img/team-bg.png)
+
+  @media (max-width: 550px)
+    padding-top: 50px
+
+  .title-small
+    margin-top: 20px
+    font-size: 1.1em
+    color: black
+    text-transform: uppercase
+    letter-spacing: 1px
+    text-align: center
+
+  .team-wrap
+    max-width: 800px
+    margin: 20px auto
+    +display(flex)
+    +justify-content(center)
+    +align-content(center)
+    +flex-wrap(wrap)
+
+    .call-to-action
+      width: 700px
+      padding: 30px 20px
+      +clearfix
+
+      @media (max-width: 485px)
+        float: none
+
+      .action
+        text-transform: uppercase
+        font-size: 1.3em
+        color: black
+        font-weight: 600
+        letter-spacing: 1px
+
+        @media (max-width: 485px)
+          text-align: center
+          font-size: 1.2em
+          letter-spacing: 0
+
+      .row
+        margin-top: 10px
+        width: 100%
+        text-align: center
+
+        p
+          font-size: .9em
+          line-height: 2em
+          float: left
+          color: #3f3f3f
+
+          @media (max-width: 485px)
+            float: none
+            display: inline-block
+
+        .join-with-us-button
+          display: inline-block
+          color: black
+          letter-spacing: 1px
+          text-transform: uppercase
+          margin-left: 30px
+          padding: 10px 40px
+          border: 1px black solid
+          float: right
+          font-size: .85em
+          font-weight: 600
+          +transition(all .5s, ease-in-out)
+
+          &:hover
+            background: $instylered-color
+            border: 1px solid transparent
+            color: white
+
+          @media (max-width: 485px)
+            margin: 10px 0 0 0
+            float: none
+
+
+
+    .team-unit
+      -webkit-filter: grayscale(100%)
+      -moz-filter: grayscale(100%)
+      -o-filter: grayscale(100%)
+      filter: grayscale(100%)
+      margin: 5px 5px
+      background-size: cover
+      width: 190px
+      +transition
+      position: relative
+      overflow: hidden
+      height: 250px
+
+      &:hover
+        transform: translateY(-5px)
+        -webkit-filter: grayscale(0%)
+        -moz-filter: grayscale(0%)
+        -o-filter: grayscale(0%)
+        filter: grayscale(0%)
+
+      .team-meta
+        border-top: 1px solid white
+        padding: 5px 10px
+        position: absolute
+        background: rgba(0,0,0,.3)
+        bottom: 0
+        width: 100%
+
+        .name, .position
+          color: white
+
+        .name
+          font-weight: 600
+          text-transform: uppercase
+          font-size: .9em
+          letter-spacing: 1px
+
+        .position
+          font-weight: 400
+          text-transform: uppercase
+          font-style: italic
+          color: rgba(255,255,255,.8)
+          font-size: .8em
+
+
+  .testimonials-wrap
+    position: relative
+    max-width: 400px
+    text-align: center
+    margin: 0 auto 40px
+
+    .read-more
+      color: black
+      font-style: italic
+      font-size: .9em
+
+      &:hover
+        text-decoration: underline
+
+    .face-container
+      +display(flex)
+      +justify-content(center)
+      +align-items(center)
+
+      .faces
+        list-style: none
+        padding: 0
+
+      .face
+        box-sizing: border-box
+        display: inline-block
+        border-radius: 50%
+        background:
+          size: cover
+          position: center
+        +size(80px)
+        margin-right: 15px
+        +transition
+        cursor: pointer
+
+        @media (max-width: 360px)
+          +size(60px)
+
+    .bubble
+      opacity: 0
+      position: absolute
+      text-align: center
+      pointer-events: none
+      +transition(all 0.3s, ease-in-out)
+      transform: scale(0)
+      transform-origin: bottom top
+
+      .testimonials-divider
+        margin: 10px auto
+        width: 200px
+
+      p
+        font-style: italic
+        color: #7e7e7e
+        font-family: "Times New Roman"
+
+      p::before, p::after
+        content: '"'
+
+      cite
+        font-style: normal
+        text-transform: uppercase
+        font-weight: 600
+        font-size: .9em
+
+    .testimonials-quote .has-bubble-open
+      opacity: 1
+      transform: scale(1)
+
+.active
+  transform: translateY(-5px)

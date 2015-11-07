@@ -14,6 +14,11 @@
 # 2) About
 # 3) Services
 # 4) Gallery
+# 5) Team
+# 6) Testimonials
+# 7) Why Choose Us
+# 8) Packages
+# 9) Contacts
 
 # =============================
 # Navigation
@@ -27,9 +32,9 @@ nav:
 - {name: "About", url: '#about'}
 - {name: "Services", url: '#services'}
 - {name: "Gallery", url: '#gallery'}
-- {name: "Team", url: '#'}
-- {name: "Packages", url: '#'}
-- {name: "Contacts", url: '#'}
+- {name: "Team", url: '#team'}
+- {name: "Packages", url: '#packages'}
+- {name: "Contacts", url: '#contacts'}
 
 # =============================
 # About
@@ -53,32 +58,61 @@ end of the event."
 # =============================
 # Services
 #
-# Some knowledge is needed in order to change the icons, do it at your own risk!
-#
-# Icons have been taken from www.fontawesome.com and is free for public use.
+# This is where you can change services names and descriptions.
+# > To add more services simply copy paste.
+# When you change descriptions or names, make sure you put it within the quotations.
 
 services-title: "Our Services"
 services-subtitle: "From event planners & coordinators to hosts. <br/> We make sure to deliver customer satisfaction through our services."
 
+
 services:
-- {name: "Event Planners & Coordinators", icon: "fa-users"}
-- {name: "Photo & Video Services", icon: "fa-camera-retro"}
-- {name: "Lights & Sound System", icon: "fa-lightbulb-o"}
-- {name: "Personalized Wedding Cords & Candles", icon: "fa-magic"}
-- {name: "Florist & Event Stylist", icon: "fa-paint-brush"}
-- {name: "Bridal Car & Van Rentals", icon: "fa-car"}
-- {name: "Host", icon: "fa-user"}
+- {name: "Event Planners/Hosts & Coordinators", link: "",
+ description: "Lorem ipsum dolor sit amet, pri ad error
+ nihil concludaturque. Pro ut erant aeterno scripta,
+ noster constituto sed at, cum eu rebum viderer inimicus.
+  Mea ea esse invenire petentium,"}
+
+- {name: "Photo & Video Services", link: "",
+ description: "Lorem ipsum dolor sit amet, pri ad error
+ nihil concludaturque. Pro ut erant aeterno scripta,
+ noster constituto sed at, cum eu rebum viderer inimicus.
+  Mea ea esse invenire petentium,"}
+
+- {name: "Lights & Sound System", link: "",
+ description: "Lorem ipsum dolor sit amet, pri ad error
+ nihil concludaturque. Pro ut erant aeterno scripta,
+ noster constituto sed at, cum eu rebum viderer inimicus.
+  Mea ea esse invenire petentium,"}
+
+- {name: "Personalized Wedding Cords & Candles", link: "",
+ description: "Lorem ipsum dolor sit amet, pri ad error
+ nihil concludaturque. Pro ut erant aeterno scripta,
+ noster constituto sed at, cum eu rebum viderer inimicus.
+  Mea ea esse invenire petentium,"}
+
+- {name: "Florist & Event Stylist", link: "",
+ description: "Lorem ipsum dolor sit amet, pri ad error
+ nihil concludaturque. Pro ut erant aeterno scripta,
+ noster constituto sed at, cum eu rebum viderer inimicus.
+  Mea ea esse invenire petentium,"}
+
+- {name: "Bridal Car & Van Rentals", link: "",
+ description: "Lorem ipsum dolor sit amet, pri ad error
+ nihil concludaturque. Pro ut erant aeterno scripta,
+ noster constituto sed at, cum eu rebum viderer inimicus.
+  Mea ea esse invenire petentium,"}
 
 # =============================
-# Services
+# Gallery
 #
 # To change the embedded featured video. You need to grab the video's ID in youtube.
-# Please note that the featured video works only for youtube. For wistia you may need to
+# Please note that the featured video works only for youtube. For wistia/vimeo you may need to
 # edit the source code directly.
 #
 # You may find the source code at "_includes/gallery.html" line 13
 #
-# Example on how to change featured video (youtube)
+# An example on how to change featured video (youtube)
 #
 #   https://www.youtube.com/watch?v=dQw4w9WgXcQ
 #   - the letters after v= is what you need. (dQw4w9WgXcQ)
@@ -90,4 +124,127 @@ gallery-title: "Our Gallery"
 gallery-subtitle: "Our most recent gallery updates. These are just the tip of the iceberg...<br>
   Make sure to check all our work by visiting our full gallery page."
 
-gallery-featured-video: "3xAK8dzffn8"
+gallery-featured-video: "eP1VzvYAV_0"
+
+# =============================
+# Team
+#
+# To add more team members. Simply copy paste and follow the pattern.
+#
+# To change images, upload your image to 'assets/img/thumbnails' folder and
+# change text within thumbnail as desired.
+#
+# REMEMBER: Do not forget to include the file extension (.jpg/.png/.gif etc.)
+
+team-title: "Meet our team"
+team-subtitle: "Behind the scenes"
+
+team-members:
+- {name: "Stanley Murphy", position: "Co-Owner / Head Coordinator", thumbnail: "thumb-1.jpg"}
+- {name: "Stanley Murphy", position: "General Manager / Owner", thumbnail: "thumb-2.jpg"}
+- {name: "Stanley Murphy", position: "Janitor", thumbnail: "thumb-3.jpg"}
+- {name: "Stanley Murphy", position: "Janitor", thumbnail: "thumb-3.jpg"}
+
+# =============================
+# Testimonials
+#
+# If you want to add new testimonial entries, like others. Simply copy paste and change to
+# what seems fit.
+#
+# REMEMBER: Simply copy paste and change the text inside quotes. Do not change anything or it
+# will not work! Change only what is inside quotes.
+#
+# To add new pictures. Go to 'assets/img/thumbnails' folder and put it there.
+# Do not forget to write the file extensions! (.jpg/.png, etc.)
+#
+# There are 3 variables:
+#  name - Name of Person
+#  thumbnail - Picture of Person
+#  quotation - What they said.
+
+testimonials-title: "What clients say?"
+
+testimonials-items:
+- {name: "John Doe", thumbnail: "thumb-1.jpg",
+  quotation: "Lorem ipsum dolor sit amet, pri ad error
+  nihil concludaturque. Pro ut erant aeterno scripta,
+  noster constituto sed at,"}
+
+- {name: "Juan Dela Cruz", thumbnail: "thumb-2.jpg",
+  quotation: "Lorem ipsum dolor sit amet, pri ad error
+  nihil concludaturque. Pro ut erant aeterno scripta,
+  noster constituto sed at,"}
+
+- {name: "Christian Right", thumbnail: "thumb-3.jpg",
+  quotation: "Lorem ipsum dolor sit amet, pri ad error
+  nihil concludaturque."}
+
+# =============================
+# Why Choose Us
+
+# To add more, copy paste as we did before.
+#
+# REMEMBER: Only change what is inside the quotes!
+#
+
+why-choose-us:
+- {name: "Events Coordinated",
+  amount: "56"}
+- {name: "Team Members",
+  amount: "18"}
+- {name: "Happy Clients",
+  amount: "150"}
+- {name: "Pictures Taken",
+  amount: "1983"}
+
+# =============================
+# Packages
+#
+# To add more packages tables, simply copy paste like others. Read previous notes for more clarification
+
+packages-title: "Pricing & Plans"
+packages-subtitle: "Affordable and cost efficient packages at your disposal."
+
+# <span> makes the text inside it bold.
+packages-landing-title: "Packages <span>perfect</span> for your <span>event.</span>"
+
+packages-main:
+- {title: "Basic Package",
+price: "25,000.00",
+short-description: "Great for small events",
+href: "packages/index.html#basic-package",
+background-color: "#8fc549"}
+
+- {title: "Bronze Package",
+price: "35,000.00",
+short-description: "Great for medium events",
+href: "packages/index.html#bronze-package",
+background-color: "#cd7f32"}
+
+- {title: "Silver Package",
+price: "48,000.00",
+short-description: "Great for large events",
+href: "packages/index.html#silver-package",
+background-color: "#787878"}
+
+- {title: "Gold Package",
+price: "62,000.00",
+short-description: "Great for huge events",
+href: "packages/index.html#gold-package",
+background-color: "#ffb90f"}
+
+- {title: "Diamond Package",
+price: "90,000.00",
+short-description: "Great for major events",
+href: "packages/index.html#diamond-package",
+background-color: "#006C8D"}
+
+other-services:
+- {title: "Other Services",
+short-description: "Some of our other services includes additional copy of DVDs, prenuptial pictorials, sign albums and more!
+In need of thank you cards? On Site Photo? We got you covered.",
+href: "packages/index.html#other-package"}
+
+
+# =============================
+# Contacts

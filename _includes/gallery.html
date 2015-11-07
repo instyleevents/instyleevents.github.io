@@ -17,57 +17,19 @@
 
   </div>
 
+  <a class="gallery-contact-us" href="#">View Full Gallery</a>
+
   <div class="pictures-lockup">
 
-      <a class="picture-thumb" href="#" style="background-image: url(http://fillmurray.com/230/500)">
+      {% for items in site.data.gallery limit: 8 %}
+      <a class="picture-thumb" href="assets/img/gallery/{{items.image}}"
+      style="background-image: url(assets/img/gallery/{{items.image}}"
+      data-rel="lightcase:gallery" title="{{items.caption}}" alt="{{items.caption}}">
         <div class="picture-meta">
-          <div class="picture-category">CTE</div>
+          <p class="fa fa-search fa-3x"></p>
         </div>
       </a>
-
-      <a class="picture-thumb" href="#" style="background-image: url(http://fillmurray.com/230/500)">
-        <div class="picture-meta">
-          <div class="picture-category">CTE</div>
-        </div>
-      </a>
-
-      <a class="picture-thumb" href="#" style="background-image: url(http://fillmurray.com/230/500)">
-        <div class="picture-meta">
-          <div class="picture-category">CTE</div>
-        </div>
-      </a>
-
-      <a class="picture-thumb" href="#" style="background-image: url(http://fillmurray.com/230/500)">
-        <div class="picture-meta">
-          <div class="picture-category">CTE</div>
-        </div>
-      </a>
-
-      <a class="picture-thumb" href="#" style="background-image: url(http://fillmurray.com/230/500)">
-        <div class="picture-meta">
-          <div class="picture-category">CTE</div>
-        </div>
-      </a>
-
-      <a class="picture-thumb" href="#" style="background-image: url(http://fillmurray.com/230/500)">
-        <div class="picture-meta">
-          <div class="picture-category">CTE</div>
-        </div>
-      </a>
-
-      <a class="picture-thumb" href="#" style="background-image: url(http://fillmurray.com/230/500)">
-        <div class="picture-meta">
-          <div class="picture-category">CTE</div>
-        </div>
-      </a>
-
-      <a class="picture-thumb" href="#" style="background-image: url(http://fillmurray.com/230/500)">
-        <div class="picture-meta">
-          <div class="picture-category">CTE</div>
-        </div>
-      </a>
-
-
+      {% endfor %}
 
   </div>
 

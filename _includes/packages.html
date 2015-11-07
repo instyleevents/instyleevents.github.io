@@ -1,0 +1,32 @@
+<section id="packages" class="packages-section">
+
+  <h2 class="title">{{site.data.settings.packages-title}}</h2>
+  <p class="subtitle">{{site.data.settings.packages-subtitle}}</p>
+
+  <div class="price-wrap">
+
+    {% for items in site.data.settings.packages-main %}
+    <ul class="pricing-table">
+      <li class="title" style="background-color: {{items.background-color}}">{{items.title}}</li>
+      <li class="price">₱{{items.price}}</li>
+      <li class="description">{{items.short-description}}</li>
+      <li class="cta-button"><a class="button" href="{{items.href}}">Read More</a></li>
+    </ul>
+    {% endfor %}
+
+    {% for items in site.data.settings.other-services limit: 1 %}
+    <ul class="pricing-table">
+      <li class="title">{{items.title}}</li>
+      <li class="description">{{items.short-description}}</li>
+      <li class="cta-button"><a class="button" href="{{items.href}}">Read More</a></li>
+    </ul>
+    {% endfor %}
+
+    <div class="price-row">
+    <p>Alternatively, you may also view our packages in PDF Format.</p>
+    <a class="button" href="#">Download PDF</a>
+    </div>
+
+  </div>
+
+</section>

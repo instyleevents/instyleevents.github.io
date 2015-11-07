@@ -4,16 +4,19 @@
 
   <p class="subtitle">{{site.data.settings.services-subtitle}}</p>
 
-  <div class="services-icons-lockup">
+  <div class="services-wrap">
+
     {% for items in site.data.settings.services %}
-    <div class="icon-unit">
-      <span class="icon fa {{items.icon}} fa-4x"></span>
-      <p class="icon-title">{{items.name}}</p>
+    <div class="services-unit">
+      <div class="services-meta">
+        <h4 class="services-title">{{items.name}}</h4>
+        <p class="services-description">{{items.description}}</p>
+
+        <!-- <a href="#" class="services-read-more">Read More</a> -->
+      </div>
     </div>
     {% endfor %}
 
   </div>
-
-  <a class="services-contact-us" href="#">Contact Us</a>
 
 </section>

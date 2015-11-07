@@ -1,0 +1,41 @@
+.why-choose-us-section
+  background:
+    image: url(../img/why-choose-us-bg.jpg)
+    position: bottom center
+    size: cover
+
+  .why-container
+    width: 100%
+    height: 100%
+    background: rgba(36,36,36,.8)
+
+    .why-wrap
+      max-width: 850px
+      margin: 0 auto
+      color: white
+      padding: 40px 20px
+      +display(flex)
+      +justify-content(space-around)
+      +align-items(center)
+      +flex-wrap(wrap)
+
+      .why-unit
+        text-align: center
+        display: block
+        padding: 10px
+
+        .underline
+          width: 40px
+          background: rgba(255,255,255,.8)
+          margin: 10px auto 0
+
+        cite
+          font-size: 1em
+          font-family: "Times New Roman"
+          text-transform: capitalize
+          letter-spacing: 1px
+          color: rgba(255,255,255,.8)
+
+        p
+          color: white
+          font-weight: 500

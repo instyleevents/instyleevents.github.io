@@ -1,6 +1,6 @@
 <header id="welcome">
 
-  <div class="logo">{% include icons/logo.html %}</div>
+  <div class="logo"><a href="/index.html">{% include icons/logo.html %}</a></div>
 
   <nav class="menu">
 
@@ -9,7 +9,7 @@
       <ul>
 
         {% for items in site.data.settings.nav %}
-          <li><a href="{{items.url}}" data-hover="{{items.name}}">{{items.name}}</a></li>
+          <li><a href="{{items.url}}">{{items.name}}</a></li>
         {% endfor %}
 
       </ul>
