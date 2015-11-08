@@ -1,3 +1,8 @@
+email: web.instyleevents@gmail.com
+# This is where all contacts will be sent to.
+# user: web.instyleevents@gmail.com
+# pass: instyleevents123
+
 # General Site Settings
 # =============================
 # This is where you can change any text in the website. From titles to description, from services and featured
@@ -18,7 +23,8 @@
 # 6) Testimonials
 # 7) Why Choose Us
 # 8) Packages
-# 9) Contacts
+# 9) Social Media
+# 10) Contacts
 
 # =============================
 # Navigation
@@ -212,39 +218,74 @@ packages-main:
 - {title: "Basic Package",
 price: "25,000.00",
 short-description: "Great for small events",
-href: "packages/index.html#basic-package",
+href: "packages/#basic-package",
 background-color: "#8fc549"}
 
 - {title: "Bronze Package",
 price: "35,000.00",
 short-description: "Great for medium events",
-href: "packages/index.html#bronze-package",
+href: "packages/#bronze-package",
 background-color: "#cd7f32"}
 
 - {title: "Silver Package",
 price: "48,000.00",
 short-description: "Great for large events",
-href: "packages/index.html#silver-package",
+href: "packages/#silver-package",
 background-color: "#787878"}
 
 - {title: "Gold Package",
 price: "62,000.00",
 short-description: "Great for huge events",
-href: "packages/index.html#gold-package",
+href: "packages/#gold-package",
 background-color: "#ffb90f"}
 
 - {title: "Diamond Package",
 price: "90,000.00",
 short-description: "Great for major events",
-href: "packages/index.html#diamond-package",
+href: "packages/#diamond-package",
 background-color: "#006C8D"}
 
 other-services:
 - {title: "Other Services",
 short-description: "Some of our other services includes additional copy of DVDs, prenuptial pictorials, sign albums and more!
 In need of thank you cards? On Site Photo? We got you covered.",
-href: "packages/index.html#other-package"}
+href: "packages/#other-package"}
 
 
 # =============================
 # Contacts
+#
+# Social media links! To add more social medias. Simply copy paste as desired,
+# list of available icons:
+#
+# 500px, angellist, bitbucket, btc, cc-discover, cc-stripe, connectdevelop, delicious, dropbox,
+# facebook, firefox, foursquare, gg-circle, github-alt, google-plus, hacker-news, internet-explorer,
+# lastfm, linkedin-square, medium, openid, paypal, pinterest-p, rebel, safari, shirtsinbulk, slack,
+# stackexchange, stumbleupon, tripadvisor, twitter, vimeo-square, weibo, windows, y-combinator,
+# yc-square, youtube-square, adn, apple, bitbucket-square, buysellads, cc-jcb, cc-visa, contao,
+# deviantart, drupal, facebook-f, flick-r, ge, git, github-square, google-plus-square, houzz, lastfm-square,
+# linux, odnoklassniki, opera, pied-piper, pinterest-square, reddit, sellsy, simplybuilt, slideshare,
+# stack-overflow, stumbleupon-circle, tumblr, twitter-square, vine, weixin, wordpress, y-combinator-square,
+# yelp, amazon, behance, bitcoin, cc-amex, cc-mastercard, chrome, css3, digg, empire, facebook-official,
+# fonticons, get-pocket, git-square, gittip, google-wallet, html5, joomla, leanpub, maxcdn, odnoklassniki-square,
+# optin-monster, pied-piper-alt, qq, reddit-square, steam, share-alt, skyatlas, soundcloud, tencent-weibo,
+# tumblr-square, viacoin, vk, whatsapp, xing, yahoo, youtube, android, behance-square, black-tie, cc-diners-club,
+# cc-paypal, codepen, dashcube, dribbble, expeditedssl, facebook-square, forumbee, gg, github, google, gratipay,
+# instagram, jsfiddle, linkedin, meanpath, opencart, pagelines, pinterest, ra, renren, share-alt-square, skype,
+# spotify, steam-square, trello, twitch, vimeo, wechat, wikipedia-w, xing-square, yc, youtube-play
+#
+# REMEMBER: DO NOT FORGET TO INCLUDE HTTP:// FULL ADDRESS ONLY
+
+social-units:
+- {url: "http://www.facebook.com/In-Style-Events-216801161674545", name: "facebook"}
+- {url: "http://www.facebook.com/In-Style-Events-216801161674545", name: "twitter"}
+- {url: "http://www.facebook.com/In-Style-Events-216801161674545", name: "google"}
+- {url: "http://www.facebook.com/In-Style-Events-216801161674545", name: "vimeo"}
+- {url: "http://www.facebook.com/In-Style-Events-216801161674545", name: "youtube-play"}
+# =============================
+# Contacts
+
+# Default email is web.instyleevents@gmail.com
+
+contacts-title: "Contact Us"
+contacts-subtitle: "Looking for our services? Simply fill up these forms and we'll be in touch! <br> Alternatively, you may send us a message by yourself at web.instyleevents@gmail.com"

@@ -352,6 +352,9 @@ h1, h2, h3, h4, h5, h6, p {
   width: 100%;
   left: 0; }
 
+#map {
+  height: 200px; }
+
 .sticky {
   position: fixed !important;
   top: 0px !important;
@@ -371,7 +374,7 @@ h1, h2, h3, h4, h5, h6, p {
       background: transparent; } }
 
 header {
-  background: #141414;
+  background: #1c1c1c;
   padding: 10px 10px 0 10px;
   z-index: 100; }
   header .logo {
@@ -1081,7 +1084,7 @@ header {
           font-weight: 500; }
 
 .packages-section {
-  padding: 100px 0; }
+  padding: 100px 0 0; }
   @media (max-width: 550px) {
     .packages-section {
       padding-top: 50px; } }
@@ -1234,6 +1237,8 @@ header {
           border-color: #007095;
           color: #FFF;
           transition: background-color 300ms ease-out; }
+          .packages-section .price-wrap .pricing-table .cta-button .button:hover {
+            background: #007095; }
     .packages-section .price-wrap ul, .packages-section .price-wrap ol, .packages-section .price-wrap dl {
       font-size: 1rem;
       line-height: 1.6;
@@ -1264,8 +1269,7 @@ header {
         font-weight: 600; }
 
 .section-basic {
-  padding: 0 80px;
-  padding-top: 50px;
+  padding: 25px 80px;
   margin-top: 20px; }
   @media (max-width: 910px) {
     .section-basic {
@@ -1282,5 +1286,305 @@ header {
   .section-basic .description {
     color: #777;
     font-size: 0.95em; }
+
+.section-contacts {
+  padding-top: 100px; }
+  .section-contacts .social-media-strip {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    margin: 10px auto;
+    max-width: 400px; }
+    .section-contacts .social-media-strip .social-unit {
+      background: #eee;
+      border-radius: 50%;
+      margin-right: 10px;
+      height: 30px;
+      width: 30px;
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -moz-box-pack: center;
+      box-pack: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      -o-justify-content: center;
+      justify-content: center;
+      -ms-flex-pack: center;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      box-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      -o-align-items: center;
+      align-items: center;
+      -ms-flex-align: center;
+      -webkit-transition: all 0.3s, ease-in-out;
+      -moz-transition: all 0.3s, ease-in-out;
+      transition: all 0.3s, ease-in-out; }
+      .section-contacts .social-media-strip .social-unit:last-child {
+        margin-right: 0px; }
+      .section-contacts .social-media-strip .social-unit:hover {
+        background: #ff0030; }
+        .section-contacts .social-media-strip .social-unit:hover i {
+          color: white; }
+      .section-contacts .social-media-strip .social-unit i {
+        color: black;
+        -webkit-transition: all 0.5s, ease-in-out;
+        -moz-transition: all 0.5s, ease-in-out;
+        transition: all 0.5s, ease-in-out; }
+  .section-contacts form {
+    padding: 0 20px;
+    max-width: 650px;
+    margin: 20px auto 50px; }
+    .section-contacts form input, .section-contacts form textarea {
+      border: 2px solid #888;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 10px; }
+      .section-contacts form input:focus, .section-contacts form textarea:focus {
+        outline: none;
+        border-color: #ff0030; }
+    .section-contacts form .submit-wrap {
+      text-align: right; }
+    .section-contacts form [type="submit"] {
+      background-color: transparent;
+      color: black;
+      width: 20%;
+      -webkit-transition: all 0.15s ease-out 0s;
+      -moz-transition: all 0.15s ease-out 0s;
+      transition: all 0.15s ease-out 0s; }
+      .section-contacts form [type="submit"]:hover {
+        border: 2px solid #ff0030;
+        background: #ff0030;
+        color: white; }
+    .section-contacts form textarea {
+      height: 10em; }
+    .section-contacts form .contact-info-group label {
+      width: 50%;
+      float: left;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+      .section-contacts form .contact-info-group label:nth-child(1) {
+        padding-right: 5px; }
+      .section-contacts form .contact-info-group label:nth-child(2) {
+        padding-left: 5px; }
+    .section-contacts form label {
+      display: block;
+      margin-bottom: 10px; }
+      .section-contacts form label span {
+        display: block; }
+
+footer {
+  background-color: #252525;
+  padding: 50px 0 20px 0;
+  text-align: center; }
+  footer .footer-wrap {
+    display: inline-block;
+    color: #636363;
+    text-align: center;
+    padding: 0 20px; }
+    footer .footer-wrap .row .footer-content {
+      text-transform: uppercase;
+      font-size: 0.95em;
+      color: #484848; }
+      footer .footer-wrap .row .footer-content a {
+        color: white; }
+    footer .footer-wrap .row .social-media-strip {
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      box-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      -o-align-items: center;
+      align-items: center;
+      -ms-flex-align: center;
+      -webkit-box-pack: center;
+      -moz-box-pack: center;
+      box-pack: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      -o-justify-content: center;
+      justify-content: center;
+      -ms-flex-pack: center;
+      margin: 10px auto;
+      max-width: 400px; }
+      footer .footer-wrap .row .social-media-strip .social-unit {
+        background: #252525;
+        margin-right: 10px;
+        -webkit-transition: all 0.3s, ease-in-out;
+        -moz-transition: all 0.3s, ease-in-out;
+        transition: all 0.3s, ease-in-out; }
+        footer .footer-wrap .row .social-media-strip .social-unit:last-child {
+          margin-right: 0px; }
+        footer .footer-wrap .row .social-media-strip .social-unit:hover i {
+          color: #ff0030; }
+        footer .footer-wrap .row .social-media-strip .social-unit i {
+          color: #636363;
+          -webkit-transition: all 0.5s, ease-in-out;
+          -moz-transition: all 0.5s, ease-in-out;
+          transition: all 0.5s, ease-in-out; }
+    footer .footer-wrap .footer-unit {
+      text-align: center; }
+      footer .footer-wrap .footer-unit span {
+        text-transform: uppercase;
+        color: white;
+        font-size: 0.9em;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+        display: block; }
+      footer .footer-wrap .footer-unit p {
+        max-width: 400px;
+        margin: 0 auto;
+        font-size: 0.85em;
+        margin-bottom: 15px; }
+      footer .footer-wrap .footer-unit .logo-footer svg path {
+        fill: #414141; }
+
+.post-header .post-meta-wrap {
+  padding: 100px 0;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 100%;
+  height: 100%; }
+  .post-header .post-meta-wrap h2, .post-header .post-meta-wrap p {
+    color: white; }
+  .post-header .post-meta-wrap h2 {
+    font-weight: 600;
+    font-size: 2em;
+    letter-spacing: 1px; }
+
+.post-content {
+  padding: 50px 20px;
+  text-align: center; }
+  .post-content .general-post-meta {
+    max-width: 600px;
+    margin: 0 auto; }
+    .post-content .general-post-meta #disqus_thread {
+      margin-top: 50px; }
+    .post-content .general-post-meta ul {
+      padding: 0;
+      margin-top: 30px;
+      list-style: none;
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      box-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      -o-align-items: center;
+      align-items: center;
+      -ms-flex-align: center;
+      -webkit-box-pack: center;
+      -moz-box-pack: center;
+      box-pack: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      -o-justify-content: center;
+      justify-content: center;
+      -ms-flex-pack: center;
+      -webkit-box-lines: multiple;
+      -moz-box-lines: multiple;
+      box-lines: multiple;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      .post-content .general-post-meta ul li {
+        width: 200px;
+        height: 200px;
+        margin: 10px 10px 0 0;
+        display: block; }
+    .post-content .general-post-meta h1 {
+      font-size: 1.5em;
+      font-weight: 400;
+      color: #303030;
+      text-transform: capitalize; }
+      .post-content .general-post-meta h1::after {
+        display: block;
+        content: "";
+        width: 80px;
+        height: 1px;
+        background: #303030;
+        color: black;
+        margin: 20px auto; }
+    .post-content .general-post-meta p {
+      line-height: 2em; }
+
+.blog-list {
+  padding: 50px 20px;
+  text-align: center; }
+  .blog-list h2 {
+    margin-bottom: 30px; }
+  .blog-list .blog-container, .blog-list caption {
+    display: block; }
+  .blog-list .blog-container::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 1px;
+    background: black;
+    color: black;
+    margin: 15px auto; }
+  .blog-list .blog-container .blog-entry {
+    color: black;
+    font-size: 1.7em;
+    font-weight: 400;
+    text-transform: capitalize;
+    -webkit-transition: all 0.15s ease-out 0s;
+    -moz-transition: all 0.15s ease-out 0s;
+    transition: all 0.15s ease-out 0s; }
+    .blog-list .blog-container .blog-entry:hover {
+      color: #ff0030; }
 
 /*# sourceMappingURL=main.css.map */

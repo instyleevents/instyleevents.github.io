@@ -1,0 +1,67 @@
+footer
+  background-color: #252525
+  padding: 50px 0 20px 0
+  text-align: center
+
+  .footer-wrap
+    display: inline-block
+    color: #636363
+    text-align: center
+    padding: 0 20px
+
+    .row
+
+      .footer-content
+        text-transform: uppercase
+        font-size: .95em
+        color: #484848
+
+        a
+          color: white
+
+
+      .social-media-strip
+        +display(flex)
+        +align-items(center)
+        +justify-content(center)
+        margin: 10px auto
+        max-width: 400px
+
+        .social-unit
+          background: #252525
+          margin-right: 10px
+          +transition(all .3s, ease-in-out)
+
+          &:last-child
+            margin-right: 0px
+
+          &:hover
+            i
+              color: $instylered-color
+
+          i
+            color: #636363
+            +transition(all .5s, ease-in-out)
+
+    .footer-unit
+      text-align: center
+
+      span
+        text-transform: uppercase
+        color: white
+        font-size: .9em
+        font-weight: 600
+        letter-spacing: 1px
+        margin-bottom: 15px
+        display: block
+
+      p
+        max-width: 400px
+        margin: 0 auto
+        font-size: .85em
+        margin-bottom: 15px
+
+      .logo-footer
+        svg
+          path
+            fill: #414141

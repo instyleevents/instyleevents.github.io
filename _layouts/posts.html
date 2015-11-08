@@ -4,19 +4,20 @@ layout: default
 
 <header>
 
-  <div class="logo">{% include icons/logo.html %}</div>
+  <div class="logo"><a href="/index.html">{% include icons/logo.html %}</a></div>
 
   <nav class="menu">
-
-      <div class="logo">{% include icons/logo.html %}</div>
 
       <a class="toggle-nav" href="#">&#9776;</a>
 
       <ul class="active">
 
-        {% for items in site.data.settings.nav %}
-          <li><a class="hvr-underline-from-center" href="{{items.url}}">{{items.name}}</a></li>
-        {% endfor %}
+        {% if page.previous.url %}
+        <li><a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a></li>
+        {% endif %}
+        {% if page.next.url %}
+        <li><a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a></li>
+        {% endif %}
 
       </ul>
 
@@ -25,4 +26,34 @@ layout: default
 
 </header>
 
-<div class="background-header">test</div>
+<div class="post-header" style="background: url(/assets/img/blog/{{page.background}}); background-size: cover; background-position: center bottom;">
+  <div class="post-meta-wrap">
+    <h2 class="post-title">{{page.title}}</h2>
+    <p class="post-subtitle">+ posted on {{page.date | date: "%B %d, %Y" }}</p>
+  </div>
+</div>
+
+
+<div class="post-content">
+
+  <div class="general-post-meta">
+    {{content}}
+    <div id="disqus_thread"></div>
+    <script>
+      (function() {  // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script');
+
+          s.src = '//instyleevents.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+    </div>
+  </div>
+
+<script id="dsq-count-scr" src="//instyleevents.disqus.com/count.js" async></script>
+
+{% include footer.html %}

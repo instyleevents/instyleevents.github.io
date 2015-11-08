@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<header id="welcome">
+
+  <div class="logo"><a href="/index.html">{% include icons/logo.html %}</a></div>
+
+  <nav class="menu">
+
+      <a class="toggle-nav fa fa-bars fa-2x" href="#"></a>
+
+      <ul>
+
+          <li><a href="/">Back to home</a></li>
+
+      </ul>
+
+  </nav>
+
+</header>
+
+<section class="blog-list">
+  <h2 class="title">Recent blog entries</h2>
+  {% for post in paginator.posts %}
+  <div class="blog-container">
+    <a class="blog-entry" href="{{post.url}}">{{post.title}}</a>
+    <br>
+    <caption class="blog-date">{{post.date | date: "%B %d, %Y"}}</caption>
+  </div>
+  {% endfor %}
+</section>
+
+
+
+{% include footer.html %}
