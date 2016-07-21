@@ -47,6 +47,8 @@ layout: default
 
 	</section>
 
+  {% include footer.html %}
+
   {% include javascript.html %}
 
 </body>
