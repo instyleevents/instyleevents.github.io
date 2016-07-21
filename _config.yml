@@ -1,12 +1,35 @@
+
+# Welcome to your website's configuration settings.
+
+# Please note all changes made here will affect your entire website.
+# For specific changes (e.g the contents of your website). Go to:
+
+# _data/paragraphs.yml
+
+# =================================================
+# IMPORTANT: settings are case-sensitive.
+
+# It is recommended that you keep a backup before
+# you commit changes to this file!
+
+# To search for certain keywords. Press CTRL+F
+#       example: email, description ... etc
+# ================================================
+
+# General Site Settings
+
+title: In Style Events #Change the title of your website.
+email: your-email@domain.com
+
+description: > #### Description starts below ####
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+
+
 # Build settings
-
 markdown: kramdown
-permalink: none
-
-port: 3000
-paginate: 6
-paginate_path: "/blog/page:num"
-
-sass:
-  sass_dir: assets/css
-  style: :nested
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+gems: [jekyll-sass-converter]

@@ -1,0 +1,58 @@
+#loadscreen
+  position: fixed
+  top: 0
+  width: 100%
+  height: 100%
+  z-index: 9999
+
+#loader
+  position: absolute
+  width: 30%
+  height: 4px
+  left: 0
+  top: 0
+  bottom: 0
+  right: 0
+  margin: auto
+  background: $loader-bg-color
+  z-index: 400
+
+#loader span
+  display: block
+  height: 100%
+  background: $loader-foreground-color
+  animation: loadanim 3s linear
+  -webkit-animation: loadanim 3s linear
+  -moz-animation: loadanim 3s linear
+  -o-animation: loadanim 3s linear
+
+@-webkit-keyframes loadanim
+  0%
+    width: 0px
+@-moz-keyframes loadanim
+  0%
+    width: 0px
+@-o-keyframes loadanim
+  0%
+    width: 0px
+@keyframes loadanim
+  0%
+    width: 0px
+
+.loadreveal
+  position: fixed
+  width: 100%
+  height: 100%
+  z-index: 300
+  top: 0
+  background: $loadscreen-bg-color
+  transform: translate3d(0,0,0)
+  -webkit-transform: translate3d(0,0,0)
+  transition: transform 0.4s
+  -webkit-transition: -webkit-transform 0.4s
+  transition-timing-function: cubic-bezier(0.7,0,0.3,1)
+  -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1)
+
+.loadreveal.reveal
+  transform: translate3d(0,-100%,0)
+  -webkit-transform: translate3d(0,-100%,0)

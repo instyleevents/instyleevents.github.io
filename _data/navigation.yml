@@ -1,0 +1,22 @@
+
+
+- name: "Home"
+  href: "/"
+
+- name: "About"
+  href: "/about/"
+  submenu:
+    - name: "Our Team"
+      href: "#"
+
+- name: "Gallery"
+  href: "#"
+
+- name: "Blog"
+  href: "#"
+
+- name: "Pricing"
+  href: "#"
+
+- name: "Contact"
+  href: "#"

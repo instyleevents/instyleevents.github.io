@@ -1,0 +1,7 @@
+/* 3. MAIN WRAPPER
+_____________________________________ */
+.wrapper {  }
+.wrapper::after { content: ""; display: block; clear: both; }
+
+#content { width: 100%; position: relative; z-index: 3; font-size: 1.3em; }
+#content::after { content: ""; display: block; clear: both; }

@@ -1,0 +1,46 @@
+/* 4. HEADER
+_____________________________________ */
+#header { width: 100%; padding: 5em 4.5% 2em; z-index: 150; letter-spacing: 0.1em; }
+#header::after { content: ""; display: block; clear: both; }
+
+body.fullscreen #header { position: absolute; }
+
+/* Logo */
+#logo { width: 20%; height: auto; float: left; margin: 0; font-weight: normal; position: absolute; z-index: 200; vertical-align: middle;  }
+#logo a { color: $tertiary-color; text-decoration: none; white-space: nowrap; display: block; }
+#logo img { display: inline-block; vertical-align: bottom; margin: -100% .5em 0 0; position: relative; top: .5em; display: none; }
+
+/* Navigation */
+#header nav { width: 75%; float: right; position: relative; top: 1em; z-index: 200; }
+#header nav ul { float: right; text-align: right; margin: 0; padding: 0; }
+#header nav ul li { display: inline-block; margin: 0 1em; }
+#header nav ul li a { display: block; color: $tertiary-color; font-size: 1.05em; padding: 0 0 1em 0; text-decoration: none; position: relative; z-index: 5; }
+#header nav ul li a::after, #header nav ul li.current-menu-item > a::after, #header nav ul li.current-menu-parent > a::after, #header nav ul li.current_page_parent  > a::after { content: ""; display: block; border-bottom: 2px solid $primary-color; max-width: 100px; margin: 0 auto; z-index: -1;
+-webkit-transform-origin: 0 0; transform-origin: 0 0;
+-webkit-transition: -webkit-transform 0.35s; transition: transform 0.35s;
+-webkit-transform: scale(1); transform: scale(1); }
+#header nav ul li a::after { -webkit-transform: scale(0,1); transform: scale(0,1); }
+#header nav ul li a:hover::after {  -webkit-transform: scale(1); transform: scale(1); }
+
+#header nav ul.sub-menu { display: none; position: absolute; top: 0; left: auto; border-left: 1px solid #555; text-align: left; padding: 3.8em 0 0 0; margin: 0 0 0 -1em; z-index: 4; background: #F7F6F5; }
+#header nav ul.sub-menu li { display: block; padding: 0; margin: 0; position: relative; }
+#header nav ul.sub-menu li a { display: block; padding: .9em 1.3em .6em 1em; width: auto; line-height: 1.1; text-decoration: none; font-size: 1em; color: #222; letter-spacing: 0.08em;  position: relative;}
+#header nav ul.sub-menu li a::before { content: ""; display: block; position: absolute; width: 100%; left: 0; top: 0; right: 0; bottom: 0; background: $primary-color; z-index: -1;
+-webkit-transform: scale(0,1); transform: scale(0,1);
+-webkit-transform-origin: 0 0; transform-origin: 0 0;
+-webkit-transition: -webkit-transform 0.35s; transition: transform 0.35s; }
+#header nav ul.sub-menu li a:hover::before {  -webkit-transform: scale(1); transform: scale(1); }
+#header nav ul.sub-menu li a:hover { border-bottom-color: $primary-color; color: #F7F6F5; text-decoration: none; }
+#header nav ul.sub-menu li a::after { display: none; }
+#header nav ul.sub-menu ul { position: static; margin: 0; z-index: 1000; }
+#header nav ul.sub-menu ul li { border-radius: 0 !important; }
+
+#header nav #menu-burger { display: none; float: right; position: relative; line-height: 36px; padding: 0 0 0 1.5em; z-index: 202; color: #555; vertical-align: middle; cursor: pointer; }
+#header nav #menu-burger:hover { color: $tertiary-color; }
+
+#header nav #searchicon {  float: right; position: relative; padding: 0 0 0 1em; z-index: 202; }
+#header nav #searchicon i { display: inline-block; font-size:.8em; color: #555; position: relative; cursor: pointer; z-index: 9; vertical-align: middle; padding: .4em 0 .2em 1em; }
+#header nav #searchicon:hover i { color: $tertiary-color; }
+#header nav #searchicon form#searchbar { position: absolute; width: 0; right: 0; bottom: -1em; opacity: 0; }
+#header nav form#searchbar #searchbar-submit { visibility: hidden; }
+#header nav form#searchbar #searchbar-input {  }

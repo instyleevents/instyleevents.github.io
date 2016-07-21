@@ -1,19 +1,36 @@
-<header id="welcome">
+<header role="banner" id="header">
 
-  <div class="logo"><a href="/index.html">{% include icons/logo.html %}</a></div>
+  <div class="wrapper">
 
-  <nav class="menu">
+    <!-- logo -->
+    <h1 id="logo">
+      <a href="index.html" rel="home">
+        <img src="" alt="InStyleEvents" />
+      </a>
+    </h1>
 
-      <a class="toggle-nav fa fa-bars fa-2x" href="#"></a>
+    <!-- main menu -->
+    <nav id="mainmenu" role="navigation">
 
-      <ul>
+      <div id="menu-burger"><i class="icon-menu"></i></div>
+      <div id="menu">
+        <ul>
+          {% for nav in site.data.navigation %}
+            {% if nav.submenu != null %}
+            <li class="menu-item-has-children"> <a href="{{nav.href}}">{{nav.name}}</a>
+              <ul class="sub-menu">{% for sub in nav.submenu %}
+                <li><a href="{{sub.href}}">{{sub.name}}</a></li>
+                {% endfor %}
+              </ul>
+            </li>
+            {% else %}
+            <li><a href="{{nav.href}}">{{nav.name}}</a></li>
+            {% endif %}
 
-        {% for items in site.data.settings.nav %}
-          <li><a href="{{items.url}}">{{items.name}}</a></li>
-        {% endfor %}
-
-      </ul>
-
-  </nav>
+          {% endfor %}
+        </ul>
+      </div>
+    </nav>
+  </div><!--end .wrapper -->
 
 </header>

@@ -1,15 +1,61 @@
 ---
-layout: default
+layout: home
 ---
 
 {% include header.html %}
-{% include slider.html %}
-{% include about.html %}
-{% include services.html %}
-{% include gallery.html %}
-{% include team.html %}
-{% include why-choose-us.html %}
-{% include packages.html %}
-{% include contact-us.html %}
-{% include maps.html %}
-{% include footer.html %}
+
+  <!-- MAIN CONTENT SECTION  _____________________________________________-->
+	<section id="content" role="main">
+		<div class="wrapper">
+			<!-- WYSIWYG -->
+
+			<div class="position-absolute">
+				<h2 class="big no-margin"><strong>
+          {{site.data.paragraphs.home-title}}
+				</strong></h2>
+				<h2>{{site.data.paragraphs.home-subtitle}}</h2><br />
+			</div>
+
+
+			<div class="gallery fullscreen-gallery">
+
+				<figure class="gallery-item">
+					<header class='gallery-icon'>
+						<div class="gallery-video" style="background-image: url('img/video/fallback-video.jpg');">
+							<div id="video-wrap" class="video-wrap">
+								  <video preload="metadata" autoplay loop id="my-video">
+									 <source src="img/video/movie.webm" type="video/webm">
+								  </video>
+						  	 </div>
+						</div>
+					</header>
+					<figcaption class='gallery-caption'>
+						<div class="entry-summary">
+							<div class="blog-oneline-carousel">
+								<h3>Latest</h3>
+								<div class="viewport">
+									<ul class="overview">
+                    {% for entries in site.data.paragraphs.blogposts %}
+                      <li>11/08 &nbsp; {{entries.text}} <a href="#">Read more</a></li>
+                    {% endfor %}
+                  </ul>
+								</div>
+							</div>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+
+			<!-- END WYSIWYG -->
+		</div><!-- END .wrapper -->
+	</section>
+
+  {% include javascript.html %}
+
+  <script>
+  	$(document).ready(function() {
+          $('#my-video').backgroundVideo({
+                  pauseVideoOnViewLoss: false
+              });
+  	});
+  </script>
